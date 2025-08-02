@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Good Morning!</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff4081;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+.heart {
+  font-size: 4em;
+  color: #ff4d6d;
+  animation: beat 2s infinite;  /* Slower animation */
+}
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      color: #444;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border: none;
+      background: #ff4081;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e91e63;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 Good Morning, Prachi ! 🌸</h1>
+  <div class="heart">❤️</div>
+  <p>Wishing you a day as bright as your smile! 😊</p>
+  <button onclick="playMusic()">Click Me 🎶</button>
+
+  <audio id="music" src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Piano_Moment/Kevin_MacLeod_-_Carefree.mp3
+"></audio>
+
+  <script>
+    function playMusic() {
+      document.getElementById("music").play();
+      alert("Have a wonderful day! 🌞💖");
+    }
+  </script>
+</body>
+</html>
